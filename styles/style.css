@@ -150,11 +150,46 @@ nav ul li{
     text-align: left;
 }
 
+/* footer section styles */
+footer{
+    background-color: #282531;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+.footer-column-container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column{
+    margin-top: 50px;
+    text-align: left;
+}
+.footer-column li{
+    list-style: none;
+}
+li h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.website-link{
+    margin-top: 50px;
+    color: #CDCDCD;
+}
 
 
 /* media query */
 @media screen and (max-width: 576px) {
-    nav, nav ul, .header-banner, .study-card-container, .course-card-container{
+    nav, 
+    nav ul, 
+    .header-banner, 
+    .study-card-container, 
+    .course-card-container, 
+    .testimonial-column,
+    .footer-column-container
+    {
         flex-direction: column;
     }
     nav ul {
@@ -164,13 +199,24 @@ nav ul li{
         margin-top: 20px;
     }
     .study-card-container{
-        margin: 20 auto;
+        margin: 0 auto;
+    }
+    .study-card{
         width: 100%;
+        margin-top: 10px;
     }
     .course-section{
         margin: 0 auto;
     }
+    .section-title{
+        margin-bottom: 10px;
+    }
     .course-card{
         margin-top: 20px;
+        width: 100%;
+    }
+    .testimonial-section{
+        width: 90%;
+        text-align: center;
     }
 }
